@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MyNavbar from "./components/Mynavbar";
-
+import MyFooter from "./components/Footer";
 function App() {
 
 
@@ -15,6 +15,7 @@ function App() {
           <MyNavbar />
           <div className="flex-grow-1">
       </div>
+      <MyFooter/>
     </main>
     </BrowserRouter>
   )

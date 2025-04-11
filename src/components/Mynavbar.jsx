@@ -2,7 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-const MyNavbar = () => {
+const MyNavbar = function (){
   const location = useLocation();
 
   return (
