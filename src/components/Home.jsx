@@ -2,18 +2,18 @@ import { Row, Col } from "react-bootstrap";
 
 const MyHome = () => {
   return (
-    <div className="container bg-gradient bg-danger  d-flex flex-column mt-1">
+    <div className="container bg-gradient bg-danger  d-flex flex-column mt-3 mb-3">
 
       {/* Sezione di benvenuto con il logo */}
       <Row className="mb-0">
         <Col className="text-center mt-3 ">
         
-          <img
+        <img
             src="src/assets/logo/7d7f4463-345e-4838-948c-7c0d1ef5e5a9.png"
             alt="logo"
-            
-            className="w-25 bg-light opacity-75 mb-4 rounded-circle" // Immagine logo che occupa il 50% della larghezza
-            height="300px"
+            width="220"
+            height="160"
+            className="   rounded-pill bg-info opacity-75 "
           />
             <h2 className="text-light fst-italic my-3">Benvenuto su #CadoMeteato!</h2>
             <h3 className="gold"> Quest'app è stata creata grazie alle mie due lauree, entrambe conseguite con lode</h3>

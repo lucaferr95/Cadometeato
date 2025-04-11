@@ -6,14 +6,15 @@ const MyNavbar = function (){
   const location = useLocation();
 
   return (
-    <Navbar expand="lg" className="border-bottom border-body bg-info w-100 fs-4">
+    <Navbar expand="lg" className="border-bottom border-body bg-black w-100 fs-4">
       <Container fluid>
         <Navbar.Brand>
           <img
             src="src/assets/logo/7d7f4463-345e-4838-948c-7c0d1ef5e5a9.png"
             alt="logo"
-            width="120"
-            height="120"
+            width="220"
+            height="160"
+            className="   rounded-pill bg-info "
           />
         </Navbar.Brand>
 
