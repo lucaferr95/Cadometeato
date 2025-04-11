@@ -7,20 +7,25 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MyNavbar from "./components/Mynavbar";
 import MyFooter from "./components/Footer";
 import MyHome from "./components/Home";
+
+import NotFound from "./components/NotFound"; 
+
 function App() {
-
-
   return (
     <BrowserRouter>
- <main className="d-flex flex-column min-vh-100 bg-info ">
-          <MyNavbar />
-          <div className="flex-grow-1">
-            <MyHome/>
-      </div>
-      <MyFooter/>
-    </main>
+      <main className="d-flex flex-column min-vh-100 bg-info">
+        <MyNavbar />
+        <div className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<MyHome />} />
+            {/* Aggiungi la route per la pagina NotFound */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <MyFooter />
+      </main>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
